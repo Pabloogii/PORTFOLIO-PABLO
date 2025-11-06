@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Pablo García - Técnico Informático</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Pablo García – Técnico Informático</h1>
+      <p class="tagline">Apasionado por la tecnología y el desarrollo web</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about" class="card">
+      <h2>Sobre mí</h2>
+      <p>Técnico informático con formación práctica en desarrollo web, programación y mantenimiento de sistemas. Busco mi primera oportunidad laboral para aplicar y ampliar mis competencias técnicas dentro de un equipo.</p>
+    </section>
+
+    <section id="skills" class="card">
+      <h2>Habilidades</h2>
+      <ul>
+        <li>Desarrollo web: HTML, CSS, JavaScript</li>
+        <li>Programación: Python, C++, Java (proyectos académicos)</li>
+        <li>Mantenimiento y reparación de equipos</li>
+        <li>Configuración básica de redes y sistemas operativos</li>
+        <li>Control de versiones: Git / GitHub</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>Proyectos destacados</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>VetConnect — Landing de ejemplo</h3>
+          <p>Landing page creada como demostración de maquetación y enfoque UX. HTML, CSS y formulario con Formspree.</p>
+          <a href="../VetConnect_Landing/index.html" target="_blank" rel="noopener">Ver proyecto</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Proyecto personal — Web de ejemplo</h3>
+          <p>Pequeña página demostrativa y portafolio de proyectos con maquetación responsiva.</p>
+          <a href="#" target="_blank" rel="noopener">Ver proyecto</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contacto</h2>
+      <form id="contactForm" action="https://formspree.io/f/meopyrqd" method="POST" novalidate>
+        <label for="name">Nombre</label>
+        <input id="name" name="name" type="text" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="message">Mensaje</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+        <p id="formStatus" class="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© Pablo García – Técnico Informático</p>
+    </div>
+  </footer>
+
+  <script src="form-handler.js"></script>
+</body>
+</html>

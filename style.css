@@ -1,0 +1,94 @@
+/* style.css - Portafolio_Personal */
+:root{
+  --bg:#f7f8fb;
+  --card:#ffffff;
+  --text:#1b1f23;
+  --muted:#6b7280;
+  --accent:#1e6fbe;
+  --container-w:900px;
+  --radius:10px;
+  --shadow:0 6px 18px rgba(22,28,40,0.06);
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+}
+
+.container{
+  max-width:var(--container-w);
+  margin:0 auto;
+  padding:28px;
+}
+
+.site-header{
+  background:linear-gradient(90deg,#fff,#f5f8fb);
+  padding:28px 0;
+  border-bottom:1px solid #e6e9ef;
+}
+.site-header h1{
+  margin:0;
+  font-size:26px;
+  letter-spacing:0.2px;
+}
+.tagline{
+  margin:6px 0 0;
+  color:var(--muted);
+}
+
+.card{
+  background:var(--card);
+  border-radius:var(--radius);
+  padding:18px;
+  margin:18px 0;
+  box-shadow:var(--shadow);
+}
+
+h2{margin-top:0}
+ul{padding-left:1.1rem}
+
+.projects-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:12px;
+}
+
+.project-card{
+  border:1px solid #eef2f6;
+  padding:12px;
+  border-radius:8px;
+  background:#fff;
+}
+
+.project-card a{
+  display:inline-block;
+  margin-top:8px;
+  text-decoration:none;
+  color:var(--accent);
+  font-weight:600;
+}
+
+form label{display:block;margin:8px 0 4px;color:var(--muted)}
+input,textarea{
+  width:100%;
+  padding:10px 12px;
+  border:1px solid #e3e6eb;
+  border-radius:8px;
+  font-size:14px;
+  outline:none;
+}
+button{
+  margin-top:12px;
+  background:var(--accent);
+  color:white;
+  border:none;
+  padding:10px 16px;
+  border-radius:8px;
+  cursor:pointer;
+}
+.status{margin-top:10px;color:var(--muted)}
+.site-footer{padding:18px 0;text-align:center;color:var(--muted);font-size:13px}
