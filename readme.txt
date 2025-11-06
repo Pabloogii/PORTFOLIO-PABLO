@@ -1,13 +1,38 @@
-Instrucciones rápidas:
+==========================================
+PABLO GARCÍA - PORTAFOLIO PERSONAL
+==========================================
 
-1) Publicar en GitHub Pages:
-   - Crea un repositorio en GitHub y sube la carpeta del proyecto.
-   - En el repositorio, ve a Settings > Pages y activa GitHub Pages desde la rama main.
-   - Tu web estará disponible en https://<tuusuario>.github.io/<nombre-del-repositorio>
+Descripción:
+-------------
+Este proyecto es un portafolio web creado para mostrar mis habilidades y proyectos como Técnico Informático.
+Incluye secciones de presentación, habilidades, proyectos y un formulario de contacto funcional conectado con Formspree.
 
-2) Formulario (ya configurado):
-   - El formulario apunta a https://formspree.io/f/meopyrqd
-   - Comprueba en Formspree que el formulario está activo y que recibes correos.
+Características:
+-----------------
+- Diseño moderno y adaptable (responsive)
+- Código limpio y fácil de editar
+- Formulario funcional (HTML + Formspree)
+- Publicado mediante GitHub Pages
 
-3) Para más cambios:
-   - Edita index.html y style.css según necesites.
+Uso:
+-----
+1. Abre el archivo index.html en tu navegador para ver el sitio localmente.
+2. Si deseas publicarlo, súbelo a GitHub y activa GitHub Pages.
+3. El formulario funcionará automáticamente con tu ID de Formspree si tienes conexión a Internet.
+
+Tecnologías:
+-------------
+HTML5, CSS3, JavaScript y Formspree.
+
+Autor:
+-------
+Pablo García  
+Técnico Informático  
+LinkedIn: https://www.linkedin.com/in/pablo-garc%C3%ADa-izquierdo-699a5b385/  
+GitHub: Pabloogii
+
+Licencia:
+----------
+Este proyecto está bajo licencia MIT. Consulta el archivo LICENSE para más información.
+
+
