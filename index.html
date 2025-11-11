@@ -1,76 +1,120 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Pablo García - Técnico Informático</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pablo García – Técnico Informático</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Portafolio de Pablo García - Técnico Informático. Desarrollo web, programación y soporte técnico." />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1>Pablo García – Técnico Informático</h1>
-      <p class="tagline">Apasionado por la tecnología y el desarrollo web</p>
+  <!-- SVG logo -->
+  <header class="header">
+    <div class="container header-inner">
+      <div class="brand">
+        <!-- logo.svg content inline -->
+        <svg id="logo" width="42" height="42" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="1" y="1" width="22" height="22" rx="5" fill="#0f1724"/>
+          <path d="M6 12h12" stroke="#08f" stroke-width="1.6" stroke-linecap="round"/>
+          <path d="M12 6v12" stroke="#08f" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+        <div class="brand-text">
+          <span class="name">Pablo García</span>
+          <span class="role">Técnico Informático</span>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#about">Sobre mí</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#contact" class="cta">Contacto</a>
+      </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section id="about" class="card">
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Construyo soluciones digitales y hago que la tecnología funcione.</h1>
+          <p class="lead">Apasionado por la innovación, el desarrollo web y la resolución de problemas. Busco mi primera oportunidad profesional para crecer y aportar.</p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn">Ver proyectos</a>
+            <a href="#contact" class="btn ghost">Contactar</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <!-- placeholder image: replace with una foto o imagen minimalista -->
+          <img src="assets/hero-portfolio.jpg" alt="Imagen representativa" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="card container">
       <h2>Sobre mí</h2>
-      <p>Técnico informático con formación práctica en desarrollo web, programación y mantenimiento de sistemas. Busco mi primera oportunidad laboral para aplicar y ampliar mis competencias técnicas dentro de un equipo.</p>
+      <p>Soy técnico informático con base práctica en desarrollo web, scripting y mantenimiento de sistemas. Me muevo cómodo entre hardware y software, y me apasiona optimizar procesos, crear interfaces limpias y aprender tecnologías emergentes.</p>
     </section>
 
-    <section id="skills" class="card">
+    <section id="skills" class="card container">
       <h2>Habilidades</h2>
-      <ul>
-        <li>Desarrollo web: HTML, CSS, JavaScript</li>
-        <li>Programación: Python, C++, Java (proyectos académicos)</li>
-        <li>Mantenimiento y reparación de equipos</li>
-        <li>Configuración básica de redes y sistemas operativos</li>
-        <li>Control de versiones: Git / GitHub</li>
-      </ul>
+      <div class="skills-grid">
+        <div><strong>Frontend:</strong> HTML, CSS, JS</div>
+        <div><strong>Programación:</strong> Python, C++, Java</div>
+        <div><strong>Redes & Sistemas:</strong> Montaje, diagnóstico, Linux/Windows</div>
+        <div><strong>Herramientas:</strong> Git, VSCode, GitHub Pages</div>
+      </div>
     </section>
 
-    <section id="projects" class="card">
+    <section id="projects" class="card container">
       <h2>Proyectos destacados</h2>
       <div class="projects-grid">
-        <article class="project-card">
-          <h3>VetConnect — Landing de ejemplo</h3>
-          <p>Landing page creada como demostración de maquetación y enfoque UX. HTML, CSS y formulario con Formspree.</p>
-          <a href="../VetConnect_Landing/index.html" target="_blank" rel="noopener">Ver proyecto</a>
+        <article class="project">
+          <img src="assets/vetconnect-thumb.jpg" alt="VetConnect" />
+          <div class="project-info">
+            <h3>VetConnect — Landing</h3>
+            <p>Landing page moderna para servicio veterinario. HTML, CSS, JS. Formulario con Formspree.</p>
+            <a href="../VetConnect_Landing_rediseñado/index.html" target="_blank" rel="noopener">Ver demo</a>
+          </div>
         </article>
 
-        <article class="project-card">
-          <h3>Proyecto personal — Web de ejemplo</h3>
-          <p>Pequeña página demostrativa y portafolio de proyectos con maquetación responsiva.</p>
-          <a href="#" target="_blank" rel="noopener">Ver proyecto</a>
+        <article class="project">
+          <img src="assets/portfolio-thumb.jpg" alt="Proyecto personal" />
+          <div class="project-info">
+            <h3>Proyecto personal — Web demo</h3>
+            <p>Pequeña web responsiva que demuestra maquetación y experiencia UX básica.</p>
+            <a href="#" target="_blank" rel="noopener">Ver demo</a>
+          </div>
         </article>
       </div>
     </section>
 
-    <section id="contact" class="card">
+    <section id="contact" class="card container">
       <h2>Contacto</h2>
+      <p>Si quieres colaborar o ofrecer una oportunidad laboral, escríbeme.</p>
       <form id="contactForm" action="https://formspree.io/f/meopyrqd" method="POST" novalidate>
-        <label for="name">Nombre</label>
-        <input id="name" name="name" type="text" required>
-
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" required>
-
-        <label for="message">Mensaje</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-
-        <button type="submit">Enviar</button>
-        <p id="formStatus" class="status" aria-live="polite"></p>
+        <div class="form-grid">
+          <label><span>Nombre</span><input type="text" name="name" required></label>
+          <label><span>Email</span><input type="email" name="email" required></label>
+        </div>
+        <label><span>Mensaje</span><textarea name="message" rows="5" required></textarea></label>
+        <div class="form-actions">
+          <button type="submit" class="btn">Enviar mensaje</button>
+          <p id="formStatus" class="status" aria-live="polite"></p>
+        </div>
       </form>
     </section>
-  </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© Pablo García – Técnico Informático</p>
-    </div>
-  </footer>
+    <footer class="footer">
+      <div class="container footer-inner">
+        <small>© 2025 Pablo García — Técnico Informático</small>
+        <div class="socials">
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+          <a href="#" aria-label="GitHub">GitHub</a>
+        </div>
+      </div>
+    </footer>
+  </main>
 
   <script src="form-handler.js"></script>
 </body>
